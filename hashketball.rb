@@ -132,8 +132,6 @@ def shoe_size(name)
   find_shoe.fetch(:shoe)
 end 
 
-shoe_size("Ben Gordon")
-
 def team_names
   hash = game_hash
   array = []
