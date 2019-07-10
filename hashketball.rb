@@ -117,8 +117,14 @@ end
 
 
 def num_points_scored(name)
-  find_player = players.find {|player| player.fetch(:player_name) == name }
-  find_player.fetch(:points)
+  game_hash.each do |team, chars|
+    game_hash[team][:players].each do |name, stats|
+     if player_name == name
+       return stats[:points] #i tried to assign this to a variable points
+  
+      end
+    end
+  end
 end 
 
 def shoe_size(name)
